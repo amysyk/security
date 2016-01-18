@@ -15,6 +15,7 @@ def inGarageDoorState():
       state = "Open"
    else:
       state = "Closed"
+   io.cleanup()
    return state
 if __name__ == "__main__":
    app.run(host = '0.0.0.0', port = WEB_SERVER_PORT)
